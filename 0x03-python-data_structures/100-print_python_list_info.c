@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <Python.h>
@@ -16,4 +15,7 @@ void print_python_list_info(PyObject *p)
 	for (elem = 0; elem < Py_SIZE(p); elem++)
 		printf("Element %d: %s\n", elem, Py_TYPE(PyList_GetItem(p, elem))->tp_name);
 }
+
+
+
 
